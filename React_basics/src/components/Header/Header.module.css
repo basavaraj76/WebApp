@@ -1,0 +1,17 @@
+/* NavBar.module.css */
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menuItem {
+    padding: 8px 12px;
+    text-decoration: none;
+    color:black;
+    
+    margin-left:5px ;
+}
+.menuItem:hover{
+    border:1px black solid;
+    background-color: rgb(81, 164, 227);
+}
