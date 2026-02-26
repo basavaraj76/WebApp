@@ -29,3 +29,17 @@ There are three main ways to style components:
 3. **Inline Styling**
    - Styles are written inside the same file using **JavaScript objects**
    - Not convenient for large applications due to **poor maintainability**
+
+## Day 3 – Concepts Learned
+
+- Created a new **Card** component  
+- Added an image, `<h1>`, and `<p>` elements with basic CSS styling  
+
+### Props
+- Props work like **function arguments**
+- **Props** are read-only inputs passed from a parent component to a child component, enabling component reusability and one-way data flow in React.
+
+
+- Created a new **Student** component  
+- Passed student information from the **App** component to the **Student** component using props
+  
