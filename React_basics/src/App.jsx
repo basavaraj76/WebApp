@@ -1,5 +1,6 @@
 import Header from "/src/components/Header/Header.jsx"
 import Footer from "/src/components/Footer/Footer.jsx"
+import  {Card}  from "/src/components/Card/Card.jsx"
 function App() {
   
 
@@ -7,8 +8,8 @@ function App() {
     <>
       <Header/>
       <Footer />
-      
-      
+      <Card />
+      <Card />
     </>
   )
 }
