@@ -1,5 +1,5 @@
 # WebApp
-It contains only fronted related concept <br/>
+It contains only frontend related concept <br/>
 
 ## Steps to create and run the react project <br>
 
