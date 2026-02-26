@@ -1,0 +1,11 @@
+.container{
+    border: 1px solid rgb(223, 214, 214);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(139, 120, 120, 0.457);
+    padding: 2rem;
+    text-align: center;
+    margin: 10px;
+    max-width: 250px;
+    display: inline-block;
+}
+
