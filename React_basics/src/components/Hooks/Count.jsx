@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import styles from "/src/components/Hooks/Count.module.css"
 
 export const Count = () =>{
     const [count,setCount] = useState(0);
@@ -19,7 +19,8 @@ export const Count = () =>{
     }
     return(
         <>
-            <div className="countContainer">
+            <div className={styles.container}>
+                <h1>Count Example</h1>
                 <h1>{count}</h1>
                 <button onClick={handlerIncrement}>Increment</button>
                 <button onClick={handlerDecrement}>Decrement</button>

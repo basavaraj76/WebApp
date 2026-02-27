@@ -1,0 +1,17 @@
+
+.container{
+    max-width: 100%;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px rgba(200, 189, 189, 0.779);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+button {
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: aqua;
+    color: rgb(11, 10, 10);
+}
