@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-export const Ustate = () =>{
+export const Count = () =>{
     const [count,setCount] = useState(0);
     
     // Increment arrow function
