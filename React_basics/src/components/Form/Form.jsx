@@ -6,17 +6,26 @@ export const Form = () =>{
     const[password,setPassword] = useState("")
     const[submitedpass,setSubmitedpass] = useState("")
     const[radio,setRadio] = useState("")
+    const[checkbox,setCheckbox] = useState(false)
     const handlerSubmit = () => {
-        if(!text && !password)return
+        if(!text || !password)return
         
             
         setSubmitedname(text)
         setSubmitedpass(password)
         setText("")
         setPassword("")
+        setRadio("")
+        setCheckbox(false)
     }
     function handlerRadio(eve){
+        console.log(eve.target.value)
         setRadio(eve.target.value)
+    }
+    function handlderCheckbox(e){
+        console.log(e.target)
+        console.log(e.target.checked)
+        setCheckbox(e.target.checked)
     }
     return(
         <>
@@ -41,12 +50,18 @@ export const Form = () =>{
                     <input type="radio" value="Female" checked={radio == "Female"}
                     onChange={handlerRadio}/>Female
                 </label> <br />
+
+                <label >
+                    <input type="checkbox" checked={checkbox} onChange={handlderCheckbox}  /> <a href="#">Accept term and condition</a>
+                </label>
                 
 
-                <button onClick={handlerSubmit}>Submit</button>
+                <button disabled={!checkbox} onClick={handlerSubmit}>Submit</button>
 
                 <p>{submitedname}</p>
                 <p>{submitedpass}</p>
+                <p>{radio}</p>
+                
 
             </div>
 
