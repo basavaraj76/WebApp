@@ -5,6 +5,7 @@ export const Form = () =>{
     const[submitedname,setSubmitedname] = useState("")
     const[password,setPassword] = useState("")
     const[submitedpass,setSubmitedpass] = useState("")
+    const[radio,setRadio] = useState("")
     const handlerSubmit = () => {
         if(!text && !password)return
         
@@ -13,6 +14,9 @@ export const Form = () =>{
         setSubmitedpass(password)
         setText("")
         setPassword("")
+    }
+    function handlerRadio(eve){
+        setRadio(eve.target.value)
     }
     return(
         <>
@@ -27,8 +31,20 @@ export const Form = () =>{
                 <input type="password" value={password}
                 onChange={eve => setPassword(eve.target.value)}
                 placeholder="Enter Password"/> <br />
+
+                Select Gender :
+                <label>
+                    <input type="radio" value="Male" checked={radio == "Male"}
+                    onChange={handlerRadio} /> Male
+                </label>
+                <label >
+                    <input type="radio" value="Female" checked={radio == "Female"}
+                    onChange={handlerRadio}/>Female
+                </label> <br />
                 
+
                 <button onClick={handlerSubmit}>Submit</button>
+
                 <p>{submitedname}</p>
                 <p>{submitedpass}</p>
 
